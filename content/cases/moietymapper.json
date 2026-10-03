@@ -1,0 +1,179 @@
+{
+  "id": "moietymapper",
+  "number": "03",
+  "name": "MoietyMapper",
+  "category": "Computational chemistry · Software",
+  "title": "The atoms that don’t fit neatly.",
+  "deck": "The mapping rules, the awkward reactions, and the problem with scoring them.",
+  "role": "Computational chemistry capstone team",
+  "context": "UC Berkeley MEng · 2025",
+  "status": "Computational chemistry capstone",
+  "short": "MoietyMapper maps partial reactions using molecular substructures. The code separates moieties, aligns them and handles bridging atoms explicitly. That structure makes the mapping process inspectable, while also exposing choices that need testing.",
+  "contribution": "I worked on MoietyMapper as part of my Berkeley computational chemistry capstone. The implementation described here is the team's repository.",
+  "result": "A working research codebase, component tests and a documented benchmarking approach. The final report records unresolved mapping cases and leaves a direct performance comparison with other mappers for later.",
+  "takeaway": "The useful explanation of a scientific algorithm includes where its rules become ambiguous, and how the evaluation handles those cases.",
+  "sections": [
+    {
+      "title": "A correspondence with chemical consequences",
+      "body": [
+        "Atom mapping assigns a correspondence between atoms on the reactant and product sides of a reaction. MoietyMapper approaches partial reactions through substructural moieties. Its pipeline keeps intermediate representations available, rather than exposing only a final mapped reaction.",
+        "That gives the project a useful teaching opportunity: show the original reaction, the fragments used for alignment and the atoms assigned afterward. A reader should be able to follow one example far enough to see why the algorithm made a particular choice."
+      ],
+      "refs": [1]
+    },
+    {
+      "title": "The bridge between fragments needs its own rule",
+      "body": [
+        "The bridging-atom module identifies heteroatoms connecting carbon groups. It uses oxidation-state information to select a neighboring carbon, follows that carbon's alignment and searches for a corresponding atom of the same element on the other side.",
+        "This is a concrete example of turning chemical reasoning into an executable rule. It also creates a concrete testing question. If several candidate neighbors satisfy the condition, what distinguishes them? In the inspected implementation, a candidate list can be resolved by taking its first entry. That makes ambiguous cases especially useful for a retrospective analysis."
+      ],
+      "refs": [2]
+    },
+    {
+      "title": "Setting up a common benchmark",
+      "body": [
+        "The detailed benchmark section of our 2025 report uses the first 10,000 BRENDA entries to establish a baseline. It records 96.65% for RXNMapper under the described evaluation, after discussing exact-string and condensed-reaction-graph comparisons. This is the report’s result; it has not been rerun for this website.",
+        "That section leaves the full LocalMapper run and direct MoietyMapper comparison for subsequent work. There is therefore no supported three-way accuracy ranking to display. A direct study would run all three tools on the same reactions and report agreement, unmapped reactions, runtime and errors by reaction type."
+      ],
+      "refs": [3]
+    },
+    {
+      "title": "Repeated fragments exposed the limits",
+      "body": [
+        "The final report identifies several cases the pipeline still struggled with: repeated carbon skeletons, symmetric molecules, small participants such as water, and stereochemical information. Finding the same fragment on both sides of a reaction does not always tell you which copy corresponds to which.",
+        "The benchmark section also deserves a more careful reading than the executive summary. It describes RXNMapper and LocalMapper as comparison baselines, with a direct MoietyMapper comparison still to come. I would keep that distinction explicit when presenting the project.",
+        "What I take from this now is that coverage belongs beside accuracy. If a method drops a difficult reaction, fails to parse it, or leaves atoms unmapped, those cases need to stay visible in the denominator. Otherwise the neatest number can hide the part of the chemistry that needs the most attention."
+      ],
+      "refs": [3]
+    },
+    {
+      "title": "What I would show alongside a headline score",
+      "body": [
+        "I would show representative successes, unresolved cases and disagreements with the reference, including the intermediate fragments. I would separate input parsing and standardization failures from mapping decisions, and report how many input reactions reached the comparison.",
+        "For a scientific user, that would make the result easier to assess. The aim is to understand which reaction structures a rule handles, where multiple mappings may be plausible and where an implementation choice needs improvement. The intermediate representations in the code make that investigation possible."
+      ],
+      "refs": [1, 2, 3]
+    }
+  ],
+  "technical": [],
+  "sources": [
+    {
+      "label": "MoietyMapper repository · pipeline and fragment alignment",
+      "detail": "Inspected source: pipeline.py, astatine.py, split_moieties.py, align_isolated_moieties.py, map_atoms.py and post_processing.py. The walkthrough describes this supplied code snapshot."
+    },
+    {
+      "label": "MoietyMapper repository · bridge handling",
+      "detail": "handle_bridging_atoms.py and map_bridging_atoms(): neighbor selection, bridge correspondence and assignment order."
+    },
+    {
+      "label": "MoietyMapper: Capstone Project Team #52 Report, 2025",
+      "detail": "Randi Roy, Roshan Sen, Abhay Bhat and Trisha Andrews; supervisor Dr. Chris Anderson. Section 2.5.1 records the BRENDA baseline and unfinished comparisons; section 2.5.2 documents the limitations."
+    },
+    {
+      "label": "RXNMapper · original project and publication",
+      "detail": "Schwaller and colleagues, 2021. Unsupervised attention-guided atom mapping. Official implementation and link to the Science Advances paper.",
+      "url": "https://github.com/rxn4chemistry/rxnmapper"
+    },
+    {
+      "label": "LocalMapper · Nature Communications, 2024",
+      "detail": "Chen and colleagues. Precise atom-to-atom mapping for organic reactions via human-in-the-loop machine learning.",
+      "url": "https://www.nature.com/articles/s41467-024-46364-y"
+    },
+    {
+      "label": "SynRXN · Scientific Data, 2026",
+      "detail": "Phan, Song and Stadler. An open benchmark and curated dataset for computational reaction modeling. Current-field context added in October 2026.",
+      "url": "https://www.nature.com/articles/s41597-026-07260-w"
+    }
+  ],
+  "tags": ["Computational chemistry", "Scientific software", "Data analysis"],
+  "team": ["Randi Roy", "Roshan Sen", "Abhay Bhat", "Trisha Andrews"],
+  "advisor": "Dr. Chris Anderson",
+  "images": [
+    {
+      "file": "assets/figures/moiety-alignment.webp",
+      "label": "An alignment you can inspect",
+      "caption": "Team final report, Figure 3. The matched carbon moiety sits between the substrate and product representations. “At” is a bookkeeping placeholder for hydrogen in the pipeline.",
+      "alt": "Original MoietyMapper report figure showing substrate, matched carbon moiety and product side by side.",
+      "after": 0
+    }
+  ],
+  "indexLabel": "MoietyMapper / Computational chemistry",
+  "repository": {
+    "url": "https://github.com/UCB-BioE-Anderson-Lab/MoietyMapper",
+    "label": "MoietyMapper repository",
+    "access": "Private repository. Access can be requested by email."
+  },
+  "walkthrough": {
+    "intro": "MoietyMapper takes a reaction SMILES string and assigns matching numbers to corresponding reactant and product atoms. The Python/RDKit pipeline starts with carbon connectivity, grows matching chemical environments, then handles the atoms left between or outside those fragments.",
+    "entry": "from moiety_mapper.pipeline import process_reaction\n\nmapped_smiles, views = process_reaction(\n    reaction_smiles,\n    collect_viz_data=True\n)",
+    "steps": [
+      {
+        "title": "1. Keep track of the original atoms",
+        "file": "astatine.py · split_moieties.py",
+        "what": "The input is parsed into reactant and product molecules. Existing atom-map labels are cleared. Hydrogens are made explicit and temporarily represented as astatine (atomic number 85); they are converted back at the end. Each fragment also carries indices identifying its original molecule and atoms.",
+        "why": "Later steps simplify and rebuild molecular fragments. The index records let the code transfer an alignment back to the original reaction, while the temporary hydrogen representation keeps those atoms available during matching."
+      },
+      {
+        "title": "2. Extract the carbon skeletons",
+        "file": "split_moieties.py → get_disconnected_moieties()",
+        "what": "The code traverses connected carbon atoms to build separate carbon-only fragments. Carbon–carbon bonds are represented as single bonds in these matching fragments, including ring-closing bonds. Canonical SMILES keys group matching skeletons across the two sides.",
+        "why": "A change in bond order does not necessarily change which carbon is which. Starting with connectivity lets the mapper look for a conserved framework before considering the surrounding atoms. This simplification belongs to the matching representation; the original reaction is retained."
+      },
+      {
+        "title": "3. Align fragments and grow their surroundings",
+        "file": "align_isolated_moieties.py → process_moiety_data()",
+        "what": "Fragments are grouped by how often their skeleton occurs: 1:1, N:N, N:M, or only on one side. The implemented alignment passes handle 1:1, N:N and N:M cases. The code grows compatible environments on the reactant and product fragments, comparing canonical representations as atoms are added. Candidate additions prioritize heteroatoms with the original bond order, then single-bond versions, then hydrogen placeholders.",
+        "why": "Two identical carbon skeletons can sit in different chemical environments. Extending the match can help distinguish them. Repeated skeletons still create ambiguous correspondences; the team report identifies these as a remaining limitation."
+      },
+      {
+        "title": "4. Map the atoms joining carbon groups",
+        "file": "handle_bridging_atoms.py · map_atoms.py",
+        "what": "The bridge-handling code identifies atoms connecting carbon groups. It selects a carbon neighbor using oxidation-state information, follows that carbon’s alignment, and searches for a corresponding neighbor of the same element. map_bridging_atoms() assigns the bridge pairs their map numbers first.",
+        "why": "A bridging oxygen, for example, is not part of either carbon-only skeleton. Giving bridges a separate pass connects the fragment alignments into a larger reaction map. The code can resolve multiple candidates by list order, so a bridge assignment is still a rule to inspect in ambiguous cases."
+      },
+      {
+        "title": "5. Transfer the alignment and handle leftovers",
+        "file": "map_atoms.py → map_remaining_atoms() · post_processing.py",
+        "what": "The aligned atoms receive matching map numbers on both sides. carbons_only controls whether this pass maps only carbon atoms; allow_overlap controls whether an existing assignment may be overwritten. The post-processing pass then looks for exactly one unmapped atom of a given element on each side and tries to grow and align its local environment.",
+        "why": "This can recover atoms outside the primary carbon fragments. It is a restricted cleanup step, not a general solution for every missing atom. Several identical leftover atoms, small molecules and stereochemical changes remain difficult cases in the report."
+      },
+      {
+        "title": "6. Return the mapped reaction and intermediate views",
+        "file": "pipeline.py → process_reaction()",
+        "what": "The reaction is serialized to mapped SMILES and the hydrogen placeholders are restored. With collect_viz_data=True, the function also returns images and SMILES for the original reaction, extracted moieties, paired fragments, bridging atoms and final map.",
+        "why": "The intermediate views make a wrong correspondence easier to locate. A reviewer can check whether the error started in the carbon split, fragment pairing, bridge assignment or cleanup, instead of trying to diagnose it from the final mapped string alone."
+      }
+    ],
+    "comparison": [
+      {
+        "name": "MoietyMapper",
+        "approach": "Explicit RDKit rules: carbon skeletons, local fragment growth and bridge handling.",
+        "use": "Inspectable intermediate structures; no model-training stage in this pipeline.",
+        "limit": "The capstone reports unresolved repeated-fragment, leftover-atom and stereochemistry cases. A completed head-to-head score is not available.",
+        "source": 3
+      },
+      {
+        "name": "RXNMapper",
+        "approach": "A transformer trained on reaction SMILES; attention is used to infer atom correspondences.",
+        "use": "A learned baseline for mapping reaction datasets, with mapped SMILES and confidence scores.",
+        "limit": "A prediction still needs validation on the reaction types of interest. Patent-derived reaction data and biochemical partial reactions are different evaluation settings.",
+        "source": 4
+      },
+      {
+        "name": "LocalMapper",
+        "approach": "A graph model trained with chemist-labelled reactions through a human-in-the-loop workflow.",
+        "use": "Combines learned atom correspondence with a confidence-checking procedure.",
+        "limit": "Reported performance is tied to the authors’ datasets and verification procedure; it cannot be transferred directly to the capstone’s BRENDA subset.",
+        "source": 5
+      }
+    ],
+    "benchmark": [
+      "The detailed benchmark section of our 2025 report uses the first 10,000 BRENDA entries to establish a baseline. It records 96.65% for RXNMapper under the described evaluation, after discussing exact-string and condensed-reaction-graph comparisons. This is the report’s result; it has not been rerun for this website.",
+      "That section leaves the full LocalMapper run and direct MoietyMapper comparison for subsequent work. There is therefore no supported three-way accuracy ranking to display. A direct study would run all three tools on the same reactions and report agreement, unmapped reactions, runtime and errors by reaction type."
+    ],
+    "current": [
+      "Recent work is putting more emphasis on how a mapper is evaluated. SynRXN (Scientific Data, 2026) supplies standardized reaction tasks, held-out atom-mapping evaluation sets and reference baselines. Its scope includes atom mapping as part of a larger pipeline of reaction curation and prediction.",
+      "For MoietyMapper, this suggests a concrete next comparison: use a shared held-out set for a general baseline, then a separately reviewed biochemical subset for the partial reactions the project targets. Agreement with another mapper can identify cases to inspect, but consensus is not a substitute for a verified reference."
+    ]
+  }
+}

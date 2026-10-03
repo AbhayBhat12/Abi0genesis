@@ -1,0 +1,137 @@
+{
+  "id": "chemomicrobiome",
+  "number": "01",
+  "name": "ChemoMicrobiome",
+  "category": "Customer discovery · Oncology",
+  "title": "Who’s actually buying this?",
+  "deck": "What the I-Corps interviews changed about the customer, the product, and the evidence we would need.",
+  "role": "Co-founder · business, product and pilot planning",
+  "context": "Nucleate Bay Area Chapter · UCSF NSF I-Corps · 2024–2025",
+  "status": "Customer discovery, 2025",
+  "short": "ChemoMicrobiome explored a microbiome-based test for chemotherapy toxicity. During NSF I-Corps, our customer hypothesis shifted from oncology clinics to a clearer distinction between clinicians using the result, institutions buying the test and payers evaluating its value. This is that discovery chapter of the wider Nucleate journey.",
+  "contribution": "I worked on the venture's business and product direction and pilot planning. The findings below come from team discovery materials; interview totals are team totals.",
+  "result": "A revised customer hypothesis and plans for clinical validation, pharma conversations and health-economic analysis. The project reached discovery and pilot planning.",
+  "takeaway": "The next question after ‘Can we predict toxicity?’ is ‘Which decision would change, for which patient, and with what evidence?’",
+  "sections": [
+    {
+      "title": "The I-Corps chapter",
+      "body": [
+        "ChemoMicrobiome was part of the Nucleate Bay Area Chapter and received the Emerging Leaders Award at the Nucleate Forum. Alongside that, we took part in UCSF NSF I-Corps. The presentations here cover the I-Corps customer-discovery process, rather than the entire history of the company.",
+        "I-Corps makes you put a commercial hypothesis in front of people who might use, buy or influence the product. In the UCSF course description, that means learning to conduct 20 customer interviews and using them to identify a customer segment and value proposition. The interviews are there to test the assumptions in the pitch.",
+        "Our recurring assignment is visible in the slides: state what we thought, report whom we spoke to, explain what we learned, and say what we would test next. Between 21 April and 6 May, our decks went from no reported interviews to 24. The useful change was the specificity of the questions we came back with."
+      ],
+      "refs": [4, 5]
+    },
+    {
+      "title": "The original bet",
+      "body": [
+        "The April 21 presentation proposed a patient-specific microbiome test for chemotherapy toxicity. The intended benefits were anticipatory guidance, personalized drug selection and dosing, and lower costs from side effects. The underlying assumption was reasonable enough to investigate: if clinicians could see a serious adverse event coming, a prediction would be useful.",
+        "But that bundled several claims together. Predicting an event, changing a treatment plan, improving an outcome and saving money are separate propositions. The initial concept did not yet establish the links between them."
+      ],
+      "refs": [1]
+    },
+    {
+      "title": "The clinical priority changed the product question",
+      "body": [
+        "By April 23, one oncology interview had put relapse and cancer control ahead of side-effect management. The team correctly treated this as a reason to interview clinicians in other cancer types. By May 6, the deck reported conversations with eight oncologists across hematology, GI, prostate and breast cancer, and summarized a recurring emphasis on survival.",
+        "My reading now: the useful unit of analysis is a treatment decision. A high-risk result could be relevant to monitoring, supportive care or a regimen discussion, but each use would need its own evidence. Those are candidate use cases, not interventions established by this project. A compelling risk score alone does not tell a clinician which action is safe or worthwhile."
+      ],
+      "refs": [2, 3]
+    },
+    {
+      "title": "The buyer kept moving",
+      "body": [
+        "The April 23 deck described physicians as having buying power, based on conversations with microbiome business-development professionals. The May 6 stakeholder map instead listed pharma and hospitals as buyers, oncologists as end users, and patients and academic opinion leaders as influencers. That change is more revealing than a single polished customer persona.",
+        "It also opens two different product paths. A tool for trial selection and a tool used during routine oncology care sit inside different workflows. They may use related biology, but the studies, budgets and purchase decisions would need to be investigated separately. The later buyer map was a sharper hypothesis, not proof that either group would buy."
+      ],
+      "refs": [2, 3]
+    },
+    {
+      "title": "Enthusiasm had different meanings",
+      "body": [
+        "The two patient interviews summarized in May expressed interest in non-invasive prediction and more control. The nine microbiome founders and executives highlighted sample variability, regulation and payer resistance. Two pharma translational scientists raised biomarker validation and inconsistent metadata. The insurance-advisor discussion emphasized costs and patient outcomes.",
+        "These conversations were useful precisely because they were not interchangeable votes for a product. Patient interest suggested a reason to use it. Pharma concerns pointed to requirements for a trustworthy dataset. The payer conversation suggested an economic question that biological validation alone would not answer. The small, exploratory samples also limit how broadly any of these findings can be generalized."
+      ],
+      "refs": [3]
+    },
+    {
+      "title": "What I would test next",
+      "body": [
+        "Looking back, I would narrow the proposed pilot to one cancer context, one regimen and one intended decision. I would specify who receives the result, what they could change, and what happens under current care. Only then would I define a useful prediction threshold and the outcomes to measure.",
+        "That would also make the commercial work less vague. Whose budget pays for the test? Who avoids a cost, and when? What additional work does the test create? These are retrospective design recommendations. The project record ends at pilot planning and proposed health-economic modeling."
+      ],
+      "refs": [3]
+    }
+  ],
+  "technical": [
+    {
+      "title": "A pilot needs a decision before it needs a dashboard",
+      "body": "For a proposed study, specify the treatment context, sample collection window, intended action and comparator. Then ask which errors matter for that action: a missed risk, an unnecessary escalation, or an inappropriate change to effective treatment. A model's discrimination, calibration and decision threshold answer different questions. No model-performance or clinical-utility results are established by these discovery decks."
+    },
+    {
+      "title": "Metadata is part of the product specification",
+      "body": "The pharma interviews raised inconsistent metadata. A useful next investigation would ask which treatment, sampling and outcome variables must travel with each microbiome sample to support the intended analysis. That is a proposed data specification, not a claim that we collected or standardized those variables."
+    },
+    {
+      "title": "What the interview numbers actually support",
+      "body": "The three versions report total interview counts of 0, 9 and 24. May 6 also reports 17 interviews since the previous meeting, which does not reconcile directly with the April 23 total. Its displayed stakeholder counts do not account for every interview either. I use the totals only to describe the documented progression, not to reconstruct an interview-level dataset."
+    },
+    {
+      "title": "The interview ledger I would keep now",
+      "body": "For each conversation I would record the stakeholder’s actual role, care setting, the last time the problem occurred, the existing workaround, who approved the purchase, and what evidence would change the next action. I would keep direct observations separate from the team’s interpretation. A repeated phrase can be a useful lead, but ten people recruited from one network can still share the same blind spot."
+    },
+    {
+      "title": "Four different claims inside “clinical utility”",
+      "body": "A model can predict an adverse event without identifying a useful intervention. I would distinguish prediction performance, the action triggered by the result, the effect of that action, and whether the action fits the setting. A pilot protocol should name the treatment context and the decision threshold before an aggregate score becomes the main success criterion. These are proposed study-design questions, not results from a completed pilot."
+    },
+    {
+      "title": "Why buyer, user and payer stayed separate",
+      "body": "The May deck assigns different roles to oncologists, hospitals, pharma, patients and insurers. Each role creates a different evidence requirement. An oncologist needs a result that can inform care; a hospital needs a feasible workflow and purchasing rationale; a trial sponsor needs a use that fits the study; a payer needs a defensible economic and clinical account. Interest from one group cannot be counted as approval from the others."
+    }
+  ],
+  "sources": [
+    {
+      "label": "ChemoMicrobiome · April 21 presentation",
+      "detail": "2025. Slides 1–3: initial proposition, business thesis and stakeholder canvas."
+    },
+    {
+      "label": "ChemoMicrobiome · April 23 presentation",
+      "detail": "2025. Slides 1–7: nine reported interviews, early segment findings and next questions."
+    },
+    {
+      "label": "ChemoMicrobiome · May 6 presentation",
+      "detail": "2025. Slides 1–10: 24 reported interviews, stakeholder map, discovery findings, revised canvas and proposed next steps."
+    },
+    {
+      "label": "UCSF NSF I-Corps course overview",
+      "detail": "UCSF describes a healthcare-focused, two-week customer-discovery course that teaches teams to conduct 20 interviews, identify customer segments and test value propositions. Course formats can vary; our dated decks are the record of this team’s activity.",
+      "url": "https://innovation.ucsf.edu/resources/i-corp"
+    },
+    {
+      "label": "NSF: About I-Corps",
+      "detail": "Program context for experiential customer discovery and exploring the commercial potential of research. The national Teams program and regional courses have different formats; the national interview target is not a claim about this project.",
+      "url": "https://www.nsf.gov/funding/initiatives/i-corps/about-i-corps"
+    }
+  ],
+  "tags": ["Customer discovery", "Oncology", "Microbiome", "Diagnostics"],
+  "team": [],
+  "images": [
+    {
+      "file": "assets/figures/chemo-apr21-2.webp",
+      "label": "The starting hypothesis",
+      "caption": "21 April 2025, slide 2. Our initial business thesis, before the reported discovery interviews.",
+      "alt": "Original ChemoMicrobiome slide listing oncologists, cancer centers and health systems as customers and stool-based toxicity prediction as the product.",
+      "after": 1
+    },
+    {
+      "file": "assets/figures/chemo-apr23-3.webp",
+      "label": "The first oncology interview",
+      "caption": "23 April 2025, slide 3. The deck records one oncology interview and proposes testing the hypothesis across other cancer types.",
+      "alt": "Original oncology discovery slide: relapse and cancer control were the priority, prompting interviews across other cancer types.",
+      "after": 2
+    }
+  ],
+  "indexLabel": "ChemoMicrobiome / Customer discovery",
+  "award": "Emerging Leaders Award · Nucleate Forum",
+  "scope": "This case study follows our NSF I-Corps customer-discovery work. ChemoMicrobiome also took part in the Nucleate Bay Area Chapter and won the Emerging Leaders Award at the Nucleate Forum."
+}

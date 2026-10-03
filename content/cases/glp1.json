@@ -1,0 +1,88 @@
+{
+  "id": "glp1",
+  "number": "04",
+  "name": "GLP-1 companion",
+  "category": "Digital health · Product concept",
+  "title": "Your habits, whose business?",
+  "deck": "Designing habit support alongside a payer dashboard.",
+  "role": "Digital health project team",
+  "context": "UC Berkeley · April 2025",
+  "status": "Course project · concept",
+  "short": "The team proposed a companion for journaling, wearable data and habit support, alongside payer-facing reporting. Designing both sides of that experience made the boundary between useful support and insurance decision-making important.",
+  "contribution": "I was part of the team developing the product offering and stakeholder proposition. The materials describe a proposed extension to Vitality, not a shipped product or a commissioned implementation.",
+  "result": "A product concept, user journey, proposed architecture and outcomes framework. The work remained a concept and evaluation plan.",
+  "takeaway": "Data-sharing choices belong in the product design: who sees a signal, what they can infer and what decisions they can make with it.",
+  "sections": [
+    {
+      "title": "One feature, two audiences",
+      "body": [
+        "The proposal combined a daily journal with wearable signals and personalized habit suggestions for people using GLP-1 medicines. On the other side, it described dashboards for health plans and employers to understand engagement, adherence and possible economic value.",
+        "The attraction was understandable: support the member day to day and help an organization assess the value of that support. But a journal entry has a different meaning when it is used to suggest a helpful action than when it contributes to a coverage or benefit decision."
+      ],
+      "refs": [1]
+    },
+    {
+      "title": "A missing entry is an ambiguous observation",
+      "body": [
+        "The deck proposed using engagement patterns to identify people who might need support. My retrospective concern is measurement: low app use could indicate many things, including tracking fatigue, a broken integration or behavior that happened without being logged.",
+        "Before turning such a signal into an adherence label, I would ask what it actually measures and how it was validated. Otherwise the interface risks making a weak inference look like a precise assessment of a person. This is an analytical extension of the proposal, not a finding from a user study."
+      ],
+      "refs": [1]
+    },
+    {
+      "title": "The data boundary changes the business model",
+      "body": [
+        "The final appendix already recognized this tension. It proposed opt-in choices, explanations of data use, aggregated or de-identified reporting, and separation between wellness and insurance data environments. Those were substantive product choices, not just wording for a privacy page.",
+        "Looking back, I would make the allowed uses explicit before designing the payer dashboard. Which signals support care outreach? Which are visible only to the member? What can be reported at cohort level? Which individual decisions must the product never imply it is qualified to make?"
+      ],
+      "refs": [1]
+    },
+    {
+      "title": "The first experiment should be smaller than the vision",
+      "body": [
+        "The proposal included personalized recommendations, coaching, community features and an economic dashboard. I would now start with one support behavior and one interpretable measurement, then test whether people understand and value the feedback.",
+        "Engagement, health outcomes and avoided costs would remain separate evaluation questions. A change in app activity would not, by itself, establish a clinical benefit or financial return. That distinction would keep an early product test focused and its claims proportionate to the evidence."
+      ],
+      "refs": [1]
+    }
+  ],
+  "technical": [
+    {
+      "title": "Three layers of measurement",
+      "body": "Usage measures whether someone interacts with the feature. A behavior measure asks whether the intended action occurred. An outcome measure asks whether health or another relevant result changed. The proposal discusses all three; a future evaluation would need to establish how they relate instead of treating engagement as a substitute for outcomes."
+    },
+    {
+      "title": "A data flow worth drawing",
+      "body": "Wearables and journal entries feed member-facing feedback. A separately defined reporting path could provide appropriate cohort summaries to an organization. The design task is to define permissions, purpose and uncertainty at each transfer. This is a proposed architecture, not a legal compliance determination or implemented data system."
+    },
+    {
+      "title": "Missingness needs its own product state",
+      "body": "I would distinguish “not recorded,” “not measured,” “not shared,” and an observed value of zero. Those states can lead to the same blank dashboard cell but mean different things. A support feature can ask the member for clarification; a payer-facing inference can have a different consequence. A first prototype should make those states visible and test how each audience interprets them before adding predictive scoring."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Habit Formation Journey · team project",
+      "detail": "April 27, 2025. Slides 7–13 and 16–17: user journey, proposed features, payer reporting, outcomes, use case and data privacy considerations. Product Offering Draft provides supporting concept detail."
+    }
+  ],
+  "tags": ["Digital health", "Product design", "Data privacy"],
+  "team": [
+    "Catherine Cala",
+    "Marisa Davis",
+    "Abhay Govind Bhat",
+    "Anik Mehta",
+    "Satvik Reddy",
+    "Tara Zimonjic"
+  ],
+  "images": [
+    {
+      "file": "assets/figures/glp1-blueprint.webp",
+      "label": "The proposed product logic",
+      "caption": "Team presentation, 27 April 2025, slide 8. This diagram describes the proposed concept, including a predictive algorithm; it does not show an implemented system.",
+      "alt": "Original concept diagram linking behavioral science and user journal data to a proposed predictive algorithm and personalized daily commitments.",
+      "after": 0
+    }
+  ],
+  "indexLabel": "GLP-1 companion / Product design"
+}

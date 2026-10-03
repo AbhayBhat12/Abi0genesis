@@ -1,0 +1,120 @@
+/* Shared shell, navigation and animated sun/moon control. */
+.shell {
+  width: min(1140px, calc(100% - 96px));
+  margin: auto;
+}
+.topbar {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  min-height: 100px;
+  border-bottom: 1px solid var(--line);
+}
+.identity {
+  font-weight: 500;
+  white-space: nowrap;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+.identity span {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 26.1px;
+  color: var(--accent);
+  margin-right: 10px;
+}
+.topbar nav {
+  display: flex;
+  gap: 28px;
+  margin-left: auto;
+  font-size: 14.4px;
+}
+.topbar nav a {
+  padding: 6px 0;
+  border-bottom: 1px solid transparent;
+}
+.topbar nav a[aria-current] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.theme-toggle {
+  width: 48px;
+  height: 38px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.theme-toggle svg {
+  width: 48px;
+  height: 32px;
+  display: block;
+}
+.theme-sky {
+  fill: #d7e4fb;
+  transition: fill 0.8s;
+}
+.theme-horizon {
+  stroke: var(--muted);
+  stroke-width: 1;
+}
+.orbit {
+  transform-origin: 24px 25px;
+  transform: rotate(180deg);
+  transition: transform 1s cubic-bezier(0.45, 0.05, 0.35, 1);
+}
+[data-theme="light"] .orbit {
+  transform: rotate(0deg);
+}
+[data-theme="dark"] .theme-sky {
+  fill: #182441;
+}
+.stars {
+  fill: #b5c8fb;
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+[data-theme="light"] .stars {
+  opacity: 0;
+}
+.sun {
+  fill: #edaa4c;
+}
+.moon {
+  fill: #f4ecc8;
+}
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -80px;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 10px 16px;
+  z-index: 10;
+}
+.skip:focus {
+  top: 10px;
+}
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 13.5px;
+}
+.back {
+  display: inline-block;
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 34px 0 42px;
+}
+.text-link {
+  font: 14.4px/1.4 var(--sans);
+  color: var(--accent);
+  display: inline-block;
+}

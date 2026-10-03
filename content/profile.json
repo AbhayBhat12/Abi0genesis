@@ -1,0 +1,216 @@
+{
+  "intro": "I’m Abhay Bhat. I’ve been around the startup ecosystem through venture capital, co-founding ChemoMicrobiome, and operator roles in biotech. Alongside that, I’ve worked across neuroscience, microbial genomics, microscopy and computational chemistry. I’m currently a Research Associate at the Long Lab at UIUC.",
+  "education": [
+    {
+      "dates": "2024–2025",
+      "name": "University of California, Berkeley",
+      "qualification": "MEng, Bioengineering & Engineering Management",
+      "detail": "Bioengineering, commercialization, and engineering leadership.",
+      "logo": "assets/logos/berkeley.png",
+      "url": "https://bioeng.berkeley.edu/",
+      "courses": [
+        "BioMEMS & BioNanotechnology Lab",
+        "Neuroethology & Neural Engineering",
+        "Deep Tech Commercialization",
+        "Introduction to Computational Molecular & Cell Biology",
+        "Marketing & Product Management",
+        "Innovation Management",
+        "Organizational Behavior",
+        "R&D Technology Management & Ethics",
+        "Teaming & Project Management",
+        "Communications for Engineering Leaders",
+        "Clinical Need-Based Therapy Solutions"
+      ]
+    },
+    {
+      "dates": "2019–2023",
+      "name": "PES University",
+      "qualification": "BTech, Biotechnology",
+      "detail": "Computational Biology & Bioinformatics focus.",
+      "logo": "assets/logos/pes.png",
+      "url": "https://pes.edu/",
+      "courses": []
+    }
+  ],
+  "timeline": [
+    {
+      "id": "long",
+      "dates": "2026–present",
+      "title": "Research Associate",
+      "place": "Long Lab · University of Illinois Urbana-Champaign",
+      "logo": "assets/logos/uiuc.png",
+      "url": "https://psychology.illinois.edu/directory/profile/long37",
+      "tags": ["Neuroscience", "Data analysis", "Scientific software"],
+      "body": [
+        "Single-nucleus RNA-seq analysis across prairie and meadow voles, including quality control, ambient-background correction, doublet detection and integration.",
+        "Behavior-processing workflows for home-cage and chamber assays: event definitions, multiple-scorer summaries, disagreement reports, and exploration of automated video scoring."
+      ],
+      "lesson": "A behavioral measure depends on the event definition and the person scoring it. Those choices need to be visible alongside the result.",
+      "case": null
+    },
+    {
+      "id": "boston",
+      "dates": "2025–2026",
+      "title": "Business Development Associate",
+      "place": "Boston Bioprocess",
+      "logo": "assets/logos/boston.png",
+      "url": "https://www.bostonbioprocess.com/",
+      "tags": ["Biomanufacturing", "Commercialization", "Product design"],
+      "body": [
+        "Turned customer requirements into fermentation-program scopes, pricing, timelines and handoffs to scientific and process teams.",
+        "Coordinated proposals, CRM workflows and contracting across technical, commercial and legal stakeholders. Contributed to discussions about digital tools and fermentation data."
+      ],
+      "lesson": "A scope of work is where a promising conversation becomes specific enough to execute: what gets measured, who owns the next step, and what happens if the result changes the plan.",
+      "case": null
+    },
+    {
+      "id": "reignite",
+      "dates": "2025",
+      "title": "Founder’s Office & Business Development Intern",
+      "place": "ReIGNITE Therapeutics",
+      "logo": "assets/logos/reignite.png",
+      "url": "https://www.reignitetx.com/about",
+      "tags": ["Oncology", "Diligence", "Commercialization"],
+      "body": [
+        "Partner landscaping and prioritization for an oncolytic-virus platform; competitive intelligence and positioning informed by scientific literature.",
+        "Organized data-room materials and supported partnership preparation, external communications and literature-analysis workflows."
+      ],
+      "lesson": "A long partner list becomes useful only when there is a reason for each organization to engage, and a specific conversation to have next.",
+      "case": null
+    },
+    {
+      "id": "speciale-2025",
+      "dates": "2025",
+      "title": "Venture Analyst Fellow · second stint",
+      "place": "Speciale Invest",
+      "logo": "assets/logos/speciale.png",
+      "url": "https://specialeinvest.com/",
+      "tags": ["Diligence", "Biotechnology", "Quantum"],
+      "body": [
+        "Returned for a second period of venture research, including biotech and deep-tech company analysis, sector landscapes and investment discussions.",
+        "Across the two stints, researched technical differentiation, market structure and commercialization assumptions, drawing on literature and founder discussions."
+      ],
+      "lesson": "The useful part of a memo is often the unresolved question that could change the investment view.",
+      "case": null
+    },
+    {
+      "id": "chemo",
+      "dates": "2024–2025",
+      "title": "Co-founder",
+      "place": "ChemoMicrobiome · Nucleate Bay Area Chapter",
+      "logo": null,
+      "url": "https://nucleate.org/",
+      "tags": ["Oncology", "Microbiome", "Customer discovery"],
+      "body": [
+        "Product and business development for a microbiome-based chemotherapy-toxicity concept. Customer discovery with patients, clinicians, founders, pharma and insurance stakeholders.",
+        "Nucleate Bay Area Chapter; Emerging Leaders Award at the Nucleate Forum. Participated in UCSF NSF I-Corps; the case study documents that customer-discovery chapter."
+      ],
+      "lesson": "The person who wants a result, the person who acts on it and the person who pays can require very different evidence.",
+      "case": "chemomicrobiome"
+    },
+    {
+      "id": "diagnostics",
+      "dates": "2024–2025",
+      "title": "Product Commercialization Consultant",
+      "place": "VIDEM · Berkeley consulting project",
+      "logo": null,
+      "url": null,
+      "tags": ["Diagnostics", "Customer discovery", "Clinical workflows"],
+      "body": [
+        "Assessed the US opportunity for a diagnostic platform through stakeholder interviews, competitor and patent research, pricing and workflow analysis.",
+        "Worked with a multidisciplinary team to examine where a faster result could justify a change in the care pathway."
+      ],
+      "lesson": "Assay runtime is only one part of the time between a patient arriving and someone being able to act.",
+      "case": "diagnostics"
+    },
+    {
+      "id": "speciale-2024",
+      "dates": "2024",
+      "title": "Venture Analyst Fellow · first stint",
+      "place": "Speciale Invest",
+      "logo": "assets/logos/speciale.png",
+      "url": "https://specialeinvest.com/",
+      "tags": ["Diligence", "Biotechnology", "Quantum"],
+      "body": [
+        "First period in early-stage deep-tech venture research, contributing company notes, market landscapes and technical analysis."
+      ],
+      "lesson": "Learning to separate an interesting technical result from a credible reason to build a company around it.",
+      "case": null
+    },
+    {
+      "id": "iisc",
+      "dates": "2023–2024",
+      "title": "Research Associate",
+      "place": "NanoOrg Lab · Indian Institute of Science",
+      "logo": "assets/logos/iisc.png",
+      "url": "https://www.nanoorg.in/",
+      "tags": ["Neuroscience", "Microscopy", "Data analysis"],
+      "body": [
+        "Worked on biological imaging and computational analysis at the Centre for Neuroscience, including fluorescence and super-resolution microscopy.",
+        "Contributed data analysis to the Arl15 collaboration; co-author on the resulting Traffic paper published in 2025."
+      ],
+      "lesson": "An image-analysis result needs to stay connected to the preparation, acquisition and segmentation choices that produced it.",
+      "case": null
+    },
+    {
+      "id": "iitm",
+      "dates": "2023",
+      "title": "Research project",
+      "place": "Karthik Raman’s Lab · IIT Madras",
+      "logo": "assets/logos/iitm.svg",
+      "url": "https://ramanlab.github.io/",
+      "tags": ["Genomics", "Microbiome", "Data analysis"],
+      "body": [
+        "Project at IIT Madras in collaboration with NASA: comparative microbial genomics, genome annotation, pangenome comparisons, and SNP/InDel analysis.",
+        "Presented a research poster and supported metagenomics analysis acknowledged in the two linked publications."
+      ],
+      "lesson": "Different reference genomes and comparison sets can change which differences become visible.",
+      "case": null
+    },
+    {
+      "id": "brainsight",
+      "dates": "2022",
+      "title": "Intern",
+      "place": "BrainSightAI",
+      "logo": "assets/logos/brainsight.png",
+      "url": "https://www.brainsightai.com/",
+      "tags": ["Neuroscience"],
+      "body": [
+        "Worked on Python pipelines during an internship at BrainSightAI."
+      ],
+      "lesson": "",
+      "case": null
+    }
+  ],
+  "publications": [
+    {
+      "credit": "2025 / Co-author / Data analysis",
+      "url": "https://doi.org/10.1111/tra.70004",
+      "title": "Golgi Localized Arl15 Regulates Cargo Transport and Cell Adhesion",
+      "description": "Traffic, 26, e70004. The full author team is in the ",
+      "projectLink": {
+        "url": "#/projects/iisc",
+        "label": "IISc project record"
+      },
+      "descriptionAfterLink": "."
+    },
+    {
+      "credit": "2025 / Acknowledged contributor / Metagenomics analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12067966/",
+      "title": "Genomic insights into novel extremotolerant bacteria isolated from the NASA Phoenix mission spacecraft assembly cleanrooms",
+      "description": "Microbiome. Data-analysis contribution through the IIT Madras collaboration."
+    },
+    {
+      "credit": "2024 / First author",
+      "url": "https://doi.org/10.1080/08927022.2023.2283540",
+      "title": "Molecular dynamics simulation studies on uptake of fipronil sulfone by gut microbiome and its influence on risk for cause of Parkinson’s disease",
+      "description": "Molecular Simulation. Computational study of molecular interactions."
+    },
+    {
+      "credit": "2023 / Acknowledged contributor / Metagenomics analysis",
+      "url": "https://www.nature.com/articles/s41598-023-44172-w",
+      "title": "Phylogenomics, phenotypic, and functional traits of five novel (Earth-derived) bacterial species isolated from the International Space Station and their prevalence in metagenomes",
+      "description": "Scientific Reports, 13, 19207. Data-analysis contribution through the IIT Madras collaboration."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+[
+  {
+    "id": "long-lab",
+    "name": "Long Lab",
+    "kind": "UIUC · 2026–present",
+    "tags": ["Neuroscience", "Data analysis", "Scientific software"],
+    "text": "Single-nucleus RNA-seq analysis and tools for behavioral research in voles. The analysis spans quality control, background correction, doublet detection and integration; the behavior work includes comparing scorers and exploring automated tracking.",
+    "links": [
+      {
+        "label": "Long Lab at UIUC",
+        "url": "https://psychology.illinois.edu/directory/profile/long37"
+      }
+    ]
+  },
+  {
+    "id": "iisc",
+    "name": "IISc: imaging and cell biology",
+    "kind": "Research · 2023–2024",
+    "tags": ["Neuroscience", "Microscopy", "Data analysis"],
+    "text": "Research at the Centre for Neuroscience, working with fluorescence and super-resolution imaging. I contributed data analysis to the Arl15 collaboration, which studied cargo transport and cell adhesion. The paper appeared in Traffic in 2025.",
+    "team": [
+      "Prerna Sharma",
+      "Pooja Hoovina Venkatesh",
+      "Shalini Samal",
+      "Neha Paddillaya",
+      "Nikita Shah",
+      "B. R. Rajeshwari",
+      "Abhay Bhat",
+      "Deepak Kumar Nayak",
+      "Archishman Dakua",
+      "Aravind Penmatsa",
+      "Deepak Kumar Nair",
+      "Nagaraj Balasubramanian",
+      "Namrata Gundiah",
+      "Subba Rao Gangi Setty"
+    ],
+    "teamLabel": "Team (paper authors)",
+    "links": [
+      {
+        "label": "NanoOrg Lab",
+        "url": "https://www.nanoorg.in/"
+      },
+      {
+        "label": "Arl15 paper · Traffic, 2025",
+        "url": "https://doi.org/10.1111/tra.70004"
+      }
+    ]
+  },
+  {
+    "id": "iit-madras",
+    "name": "IIT Madras: comparative microbial genomics",
+    "kind": "Project at IIT Madras in collaboration with NASA · 2023",
+    "tags": ["Genomics", "Microbiome", "Data analysis"],
+    "text": "Comparative analysis of bacterial genomes, including SNPs and indels, genome annotation and pangenome analysis. I also presented a poster. My contribution to the associated papers was primarily data analysis; both papers acknowledge my support with metagenomics analysis.",
+    "links": [
+      {
+        "label": "Karthik Raman’s Lab",
+        "url": "https://ramanlab.github.io/"
+      },
+      {
+        "label": "ISS bacterial species · Scientific Reports, 2023",
+        "url": "https://www.nature.com/articles/s41598-023-44172-w"
+      },
+      {
+        "label": "Phoenix mission cleanrooms · Microbiome, 2025",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12067966/"
+      }
+    ]
+  },
+  {
+    "id": "fipronil",
+    "name": "Fipronil sulfone and the gut microbiome",
+    "kind": "Molecular simulation · online 2023, journal issue 2024",
+    "tags": ["Computational chemistry", "Microbiome", "Neuroscience"],
+    "text": "First-author molecular-simulation research on fipronil sulfone uptake by gut microbes, framed around a proposed connection to Parkinson’s disease risk. The computational study addresses molecular interactions; it does not establish disease causation.",
+    "links": [
+      {
+        "label": "Molecular Simulation paper",
+        "url": "https://doi.org/10.1080/08927022.2023.2283540"
+      }
+    ],
+    "team": ["Abhay Bhat", "Anushree M", "Vivek Chandramohan", "Sasmita Sabat"],
+    "teamLabel": "Team (paper authors)"
+  },
+  {
+    "id": "biomems",
+    "name": "BioMEMS and magnetic particle imaging",
+    "kind": "UC Berkeley · course project",
+    "tags": ["Microfluidics", "Product design"],
+    "text": "Berkeley BioMEMS project on microfluidic generation of nanoparticle-containing droplets for magnetic particle imaging. The team compared device geometry, flow conditions and surfactants, and tracked emulsion stability over time.",
+    "links": [],
+    "image": "assets/figures/droplet-generator.webp",
+    "deck": "biomems-poster",
+    "team": [
+      "Abhay Bhat",
+      "Anushka Joshi",
+      "Eliza Coleto",
+      "Phoo Thwe",
+      "Shuqing Zhao"
+    ],
+    "teamLabel": "Team (equal contributions)"
+  },
+  {
+    "id": "speciale",
+    "name": "Speciale Invest",
+    "kind": "Venture research · 2024 and 2025",
+    "tags": ["Customer discovery", "Diagnostics", "Diligence"],
+    "text": "Research into biotech and deep-tech opportunities, including sourcing and founder diligence for an AI diagnostics startup.",
+    "links": []
+  },
+  {
+    "id": "out-of-syllabus",
+    "name": "Out of Syllabus",
+    "kind": "Millennium Fellowship, 2021 · work in progress",
+    "tags": ["Education", "Product design"],
+    "text": "An education project that moved from an online-platform idea to an offline course as access became a constraint. I designed financial-literacy activities for students in grades 8–10, spoke with education practitioners and approached local schools. Games were intended to reveal how students applied the ideas. The project remains a work in progress.",
+    "links": [
+      {
+        "label": "Millennium Fellowship profile",
+        "url": "https://www.millenniumfellows.org/fellow/2021/pes/abhay-govind-bhat"
+      }
+    ]
+  },
+  {
+    "id": "orforglipron",
+    "name": "Orforglipron marketing study",
+    "kind": "UC Berkeley · course analysis",
+    "tags": ["Digital health", "Product design", "Diligence"],
+    "text": "A team exercise in patient segmentation, positioning and market access for an oral GLP-1 candidate. The forecasts belong to the original course scenario.",
+    "team": [
+      "Zhixuan (Katie) Zhu",
+      "Yu-Chieh (Sophia) Shiao",
+      "Sparshika Chhaperia",
+      "Abhay Bhat",
+      "Lin Wang",
+      "Chen Tian"
+    ],
+    "links": [],
+    "deck": "marketing-full"
+  }
+]

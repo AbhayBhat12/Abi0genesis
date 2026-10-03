@@ -1,0 +1,118 @@
+/* Dark/light colour variables, font families, defaults and accessibility. */
+:root {
+  color-scheme: dark;
+  --bg: #0b122b;
+  --fg: #f2f1e9;
+  --muted: #a7b3d2;
+  --accent: #a1b8ff;
+  --line: #2c3857;
+  --soft: #131e3d;
+  --image: #f8f8f5;
+  --warm: #e6ba85;
+  --nav-bg: rgba(11, 18, 43, 0.94);
+  --shadow: 0 24px 65px #04091938;
+  --sans: Jost, "Trebuchet MS", sans-serif;
+  --serif: Newsreader, Georgia, serif;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #faf9f4;
+  --fg: #182441;
+  --muted: #5b6680;
+  --accent: #254fc1;
+  --line: #d5d8e1;
+  --soft: #eef0f9;
+  --warm: #886044;
+  --nav-bg: rgba(250, 249, 244, 0.95);
+  --shadow: 0 24px 65px #25365c14;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16.2px/1.55 var(--sans);
+  transition:
+    background-color 0.65s,
+    color 0.4s;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent);
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button {
+  color: inherit;
+  cursor: pointer;
+}
+a,
+button,
+input,
+select {
+  touch-action: manipulation;
+}
+button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+main:focus {
+  outline: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+h1 {
+  font-size: 68.4px;
+}
+h2 {
+  font-size: 32.4px;
+}
+h3 {
+  font-size: 24.3px;
+}
+button {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+strong {
+  font-weight: 500;
+}

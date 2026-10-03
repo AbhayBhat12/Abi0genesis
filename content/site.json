@@ -1,0 +1,17 @@
+{
+  "site": {
+    "title": "Abiogenesis",
+    "headline": ["Abiogenesis"],
+    "intro": "A record of what I’ve tried, what I’m learning, and the opinions I’m still working on.",
+    "framing": [
+      "What I tried.",
+      "What changed my mind.",
+      "What I’d do differently."
+    ]
+  },
+  "contact": {
+    "email": "abhaybhat@berkeley.edu",
+    "linkedin": "https://www.linkedin.com/in/abhay-bhat12/",
+    "resume": "assets/downloads/Abhay-Bhat-Resume.pdf"
+  }
+}

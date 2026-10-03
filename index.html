@@ -1,79 +1,114 @@
 <!doctype html>
-<html>
+<html lang="en" data-theme="dark">
   <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
-    <title>Your title here</title>
-    <meta name="description" content="A brief description of your site for search engines">
-    <meta name="author" content="Information about the author here">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
-  
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
-
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Abiogenesis — Abhay Bhat</title>
+    <meta
+      name="description"
+      content="What I tried, what changed my mind, and what I would do differently. Research, case studies and reflections by Abhay Bhat."
+    />
+    <meta name="theme-color" content="#0b122b" />
+    <meta property="og:title" content="Abiogenesis — Abhay Bhat" />
+    <meta
+      property="og:description"
+      content="Projects, research and the opinions I’m still working on."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/identity/goose.svg" />
+    <script>
+      try {
+        const saved = localStorage.getItem("abiogenesis-theme");
+        if (saved === "light" || saved === "dark")
+          document.documentElement.dataset.theme = saved;
+      } catch {}
+    </script>
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/pages.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
   </head>
-  
   <body>
-
-    <header id="header">
-      <img src="logo.png">
-      <h1>Simple Website</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/zirafa/simple-website-template">Fork this repository</a> to create your own site!
-            </p>
-          </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
-            </p>
-          </div>
-          
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="shell">
+      <header class="topbar">
+        <a href="#/" class="identity" aria-label="Abhay Bhat, home"
+          ><img
+            class="goose-mark"
+            src="assets/identity/goose.svg"
+            alt=""
+            aria-hidden="true"
+          />Abhay Bhat</a
+        >
+        <nav aria-label="Main navigation">
+          <a href="#/">Case studies</a><a href="#/projects">Projects</a
+          ><a href="#/profile">Profile</a>
+        </nav>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Light mode"
+          title="Light mode"
+        >
+          <svg viewBox="0 0 48 32" aria-hidden="true">
+            <defs>
+              <clipPath id="sky-clip"><path d="M1 25V1H47V25Z" /></clipPath>
+            </defs>
+            <g clip-path="url(#sky-clip)">
+              <rect
+                class="theme-sky"
+                x="1"
+                y="1"
+                width="46"
+                height="28"
+                rx="12"
+              />
+              <g class="stars">
+                <circle cx="10" cy="9" r=".8" />
+                <circle cx="38" cy="7" r=".9" />
+                <circle cx="35" cy="18" r=".6" />
+              </g>
+              <g class="orbit">
+                <circle class="sun" cx="24" cy="12" r="6" />
+                <path class="moon" d="M24 32a6 6 0 1 0 6 6 5 5 0 0 1-6-6Z" />
+              </g>
+            </g>
+            <path class="theme-horizon" d="M3 26H45" />
+          </svg>
+        </button>
+      </header>
+      <main id="main" tabindex="-1">
+        <h1>Abiogenesis — Abhay Bhat</h1>
+        <p>Loading the portfolio…</p>
+      </main>
+      <noscript
+        ><p>
+          This portfolio uses JavaScript for its reading views and interactions.
+          Enable JavaScript to read it.
+        </p></noscript
+      >
+      <footer class="footer">
+        <div>Abhay Bhat<br />Bioengineering & life sciences</div>
+        <div>
+          <a href="#/abiogenesis">Why Abiogenesis?</a> /
+          <a href="#/topics">Topics</a><br />Independent reflections. Views are
+          my own.
         </div>
-      </div>
+      </footer>
     </div>
-
-    <footer>  
-      Footer region
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
+    <dialog
+      id="figure-dialog"
+      class="figure-dialog"
+      aria-labelledby="dialog-title"
+    >
+      <div class="dialog-top">
+        <h2 id="dialog-title"></h2>
+        <button id="close-figure" autofocus>Close ×</button>
+      </div>
+      <img id="dialog-image" alt="" />
+      <p id="dialog-caption"></p>
+    </dialog>
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
